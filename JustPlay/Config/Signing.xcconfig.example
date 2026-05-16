@@ -1,0 +1,5 @@
+// Copy this file to Signing.xcconfig and fill in local values.
+// Developer ID Application may be used locally for release/archive/notarization.
+
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
+CODE_SIGN_IDENTITY = Apple Development

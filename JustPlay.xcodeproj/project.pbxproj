@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17AABF4F8DAC841B8014BFDC /* OpenFileAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401F96E4461DD9070EB22E1 /* OpenFileAppDelegate.swift */; };
+		33EF6063B8045870ECAD66D6 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2E099D30A665480E4BB17 /* AudioPlayerService.swift */; };
+		43FD0F6649DD37A2E220600A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B88DA77FF3CD678AE21D18E /* Assets.xcassets */; };
+		665F469D777E766396CAA8F3 /* SupportedAudioTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6BDED80E5F7125C4E1809 /* SupportedAudioTypes.swift */; };
+		676A924CC38398A26A652872 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B3246B877C0670A6A0559 /* AppModel.swift */; };
+		74792E7D5A13061103F4B77B /* ShortcutBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7513DE57A1034A878F80F /* ShortcutBindings.swift */; };
+		7A69F9BFD67DFEAFD999FB84 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB909018BC84B008B06D057 /* PreferencesView.swift */; };
+		8C4B548B74F5CE1B44B66776 /* FloatingPlayerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8883A0F96D74FE443829575D /* FloatingPlayerWindowController.swift */; };
+		97C7E4041880C660521A6DA2 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D93D692CA2EF4CDF26E233 /* HistoryStore.swift */; };
+		9954FC61A4212E55FA7997F5 /* DocumentIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9860DD88D3E06EAD5EF446 /* DocumentIcon.svg */; };
+		ADAA26FCBA5C05CF140FF864 /* AppIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB2A8F37A2A4CF4894CCDB /* AppIcon.svg */; };
+		B4B16A8F1B41881E37011BB1 /* MenuBarRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98CE28C6B025E4126529FFC /* MenuBarRootView.swift */; };
+		B89B37248493E2DDFF4498E3 /* HistoryStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B51B92E88C1DFA0B0ABDF /* HistoryStoreTests.swift */; };
+		E057FF5EC71472A0C590B909 /* SupportedAudioTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609EB4E86EF46247D4C07B77 /* SupportedAudioTypesTests.swift */; };
+		EFE2CF63791D3E18DAD20905 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = BDB0B3BAACE247D1FB39FD02 /* KeyboardShortcuts */; };
+		F0B9AB9B7D4A24271A9A094A /* FloatingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718253E9D5E792D086FA96F /* FloatingPlayerView.swift */; };
+		F887497344058940888F3573 /* JustPlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50535C1EA9965E022F28738D /* JustPlayApp.swift */; };
+		F9EB90F736FF6F6B508AD26A /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D0647DBD20639E4ADDB1E /* PreferencesWindowController.swift */; };
+		FF18949D7CABECA1F59E3E13 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E8477F4E1DF1F67E4D96B427 /* .gitkeep */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		405C764C7CE8935F0BE3889E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE560CA80AF4AADC3589B866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 457D62D93D10021229A561C0;
+			remoteInfo = JustPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CB909018BC84B008B06D057 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		10C2E099D30A665480E4BB17 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		1401F96E4461DD9070EB22E1 /* OpenFileAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFileAppDelegate.swift; sourceTree = "<group>"; };
+		2718253E9D5E792D086FA96F /* FloatingPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlayerView.swift; sourceTree = "<group>"; };
+		2F9860DD88D3E06EAD5EF446 /* DocumentIcon.svg */ = {isa = PBXFileReference; path = DocumentIcon.svg; sourceTree = "<group>"; };
+		38C7513DE57A1034A878F80F /* ShortcutBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutBindings.swift; sourceTree = "<group>"; };
+		3ACB2A8F37A2A4CF4894CCDB /* AppIcon.svg */ = {isa = PBXFileReference; path = AppIcon.svg; sourceTree = "<group>"; };
+		4B88DA77FF3CD678AE21D18E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BCD91C24F64A55A28E4381A /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		50535C1EA9965E022F28738D /* JustPlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPlayApp.swift; sourceTree = "<group>"; };
+		609EB4E86EF46247D4C07B77 /* SupportedAudioTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedAudioTypesTests.swift; sourceTree = "<group>"; };
+		627B2906DA20083A2BEE6C5B /* JustPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8883A0F96D74FE443829575D /* FloatingPlayerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlayerWindowController.swift; sourceTree = "<group>"; };
+		9B5B51B92E88C1DFA0B0ABDF /* HistoryStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreTests.swift; sourceTree = "<group>"; };
+		A7D93D692CA2EF4CDF26E233 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		C55D0647DBD20639E4ADDB1E /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		D44B3246B877C0670A6A0559 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D98CE28C6B025E4126529FFC /* MenuBarRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarRootView.swift; sourceTree = "<group>"; };
+		E542111CE02A6363DB7BAA76 /* JustPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8477F4E1DF1F67E4D96B427 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		E8E6BDED80E5F7125C4E1809 /* SupportedAudioTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedAudioTypes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19336A3FFD74AB8FE13905B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE2CF63791D3E18DAD20905 /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DA65B087986D87B6643B31 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4BCD91C24F64A55A28E4381A /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		261D05CDA76883BAB6F27ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E542111CE02A6363DB7BAA76 /* JustPlay.app */,
+				627B2906DA20083A2BEE6C5B /* JustPlayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F3D27D07E03A138F157ABA /* JustPlay */ = {
+			isa = PBXGroup;
+			children = (
+				18DA65B087986D87B6643B31 /* Config */,
+				64E578226F5533EA4215FD7F /* Resources */,
+				54812322813D75CD1D2E2F56 /* Sources */,
+				E7A4E5EA71AA8622ED29CC5E /* Tests */,
+			);
+			path = JustPlay;
+			sourceTree = "<group>";
+		};
+		2CB89D5FBDF69410261D9E5A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0CB909018BC84B008B06D057 /* PreferencesView.swift */,
+				C55D0647DBD20639E4ADDB1E /* PreferencesWindowController.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		54812322813D75CD1D2E2F56 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6F1336A8903C8DB2F57B1 /* App */,
+				8D0C724F4A88AD4400059BB0 /* Audio */,
+				BB63243A8923A18B33D71386 /* Models */,
+				F8888B87ACE25066DF8DD194 /* Shortcuts */,
+				CDC2A960C4029BAA581B5465 /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		64E578226F5533EA4215FD7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8477F4E1DF1F67E4D96B427 /* .gitkeep */,
+				3ACB2A8F37A2A4CF4894CCDB /* AppIcon.svg */,
+				4B88DA77FF3CD678AE21D18E /* Assets.xcassets */,
+				2F9860DD88D3E06EAD5EF446 /* DocumentIcon.svg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BD6F1336A8903C8DB2F57B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D44B3246B877C0670A6A0559 /* AppModel.swift */,
+				50535C1EA9965E022F28738D /* JustPlayApp.swift */,
+				1401F96E4461DD9070EB22E1 /* OpenFileAppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8D0C724F4A88AD4400059BB0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				10C2E099D30A665480E4BB17 /* AudioPlayerService.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		BB63243A8923A18B33D71386 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7D93D692CA2EF4CDF26E233 /* HistoryStore.swift */,
+				E8E6BDED80E5F7125C4E1809 /* SupportedAudioTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD93CB0D3A143EDB32530F1E = {
+			isa = PBXGroup;
+			children = (
+				27F3D27D07E03A138F157ABA /* JustPlay */,
+				261D05CDA76883BAB6F27ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDC2A960C4029BAA581B5465 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2718253E9D5E792D086FA96F /* FloatingPlayerView.swift */,
+				8883A0F96D74FE443829575D /* FloatingPlayerWindowController.swift */,
+				D98CE28C6B025E4126529FFC /* MenuBarRootView.swift */,
+				2CB89D5FBDF69410261D9E5A /* Preferences */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E7A4E5EA71AA8622ED29CC5E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9B5B51B92E88C1DFA0B0ABDF /* HistoryStoreTests.swift */,
+				609EB4E86EF46247D4C07B77 /* SupportedAudioTypesTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F8888B87ACE25066DF8DD194 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				38C7513DE57A1034A878F80F /* ShortcutBindings.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		457D62D93D10021229A561C0 /* JustPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B5C7C95D2E4A6ECC0B49A2 /* Build configuration list for PBXNativeTarget "JustPlay" */;
+			buildPhases = (
+				B8A05994D6131BF42C148045 /* Sources */,
+				35D0CF4EC8C8E077B0418456 /* Resources */,
+				19336A3FFD74AB8FE13905B2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustPlay;
+			packageProductDependencies = (
+				BDB0B3BAACE247D1FB39FD02 /* KeyboardShortcuts */,
+			);
+			productName = JustPlay;
+			productReference = E542111CE02A6363DB7BAA76 /* JustPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6407F5DD06D7D8EBFF15F7F6 /* JustPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD6902749021DAD3D8C63DA /* Build configuration list for PBXNativeTarget "JustPlayTests" */;
+			buildPhases = (
+				CA86D76FD079AB51F890D8B3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0E64ED4B8889FA90E5CDBF3 /* PBXTargetDependency */,
+			);
+			name = JustPlayTests;
+			packageProductDependencies = (
+			);
+			productName = JustPlayTests;
+			productReference = 627B2906DA20083A2BEE6C5B /* JustPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE560CA80AF4AADC3589B866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					457D62D93D10021229A561C0 = {
+						DevelopmentTeam = G3542RBKQY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3E7FD6405A5B3D5E7581DF77 /* Build configuration list for PBXProject "JustPlay" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CD93CB0D3A143EDB32530F1E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8630AB6D51F2BCE8D29C1BA3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 261D05CDA76883BAB6F27ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				457D62D93D10021229A561C0 /* JustPlay */,
+				6407F5DD06D7D8EBFF15F7F6 /* JustPlayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35D0CF4EC8C8E077B0418456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF18949D7CABECA1F59E3E13 /* .gitkeep in Resources */,
+				ADAA26FCBA5C05CF140FF864 /* AppIcon.svg in Resources */,
+				43FD0F6649DD37A2E220600A /* Assets.xcassets in Resources */,
+				9954FC61A4212E55FA7997F5 /* DocumentIcon.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8A05994D6131BF42C148045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676A924CC38398A26A652872 /* AppModel.swift in Sources */,
+				33EF6063B8045870ECAD66D6 /* AudioPlayerService.swift in Sources */,
+				F0B9AB9B7D4A24271A9A094A /* FloatingPlayerView.swift in Sources */,
+				8C4B548B74F5CE1B44B66776 /* FloatingPlayerWindowController.swift in Sources */,
+				97C7E4041880C660521A6DA2 /* HistoryStore.swift in Sources */,
+				F887497344058940888F3573 /* JustPlayApp.swift in Sources */,
+				B4B16A8F1B41881E37011BB1 /* MenuBarRootView.swift in Sources */,
+				17AABF4F8DAC841B8014BFDC /* OpenFileAppDelegate.swift in Sources */,
+				7A69F9BFD67DFEAFD999FB84 /* PreferencesView.swift in Sources */,
+				F9EB90F736FF6F6B508AD26A /* PreferencesWindowController.swift in Sources */,
+				74792E7D5A13061103F4B77B /* ShortcutBindings.swift in Sources */,
+				665F469D777E766396CAA8F3 /* SupportedAudioTypes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA86D76FD079AB51F890D8B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89B37248493E2DDFF4498E3 /* HistoryStoreTests.swift in Sources */,
+				E057FF5EC71472A0C590B909 /* SupportedAudioTypesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0E64ED4B8889FA90E5CDBF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 457D62D93D10021229A561C0 /* JustPlay */;
+			targetProxy = 405C764C7CE8935F0BE3889E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		012161AEB35BAF495C0FA2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustPlay.app/Contents/MacOS/JustPlay";
+			};
+			name = Release;
+		};
+		07055075A114812DA0936CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustPlay.app/Contents/MacOS/JustPlay";
+			};
+			name = Debug;
+		};
+		314CA65AC4E6B2F8F8132E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		3A1813577225E8D0E8D842FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCD91C24F64A55A28E4381A /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JustPlay/Config/JustPlay.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "JustPlay/Config/Generated-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.JustPlay;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6DEE87E1B7B4CE77E38382AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		8A08B47302150B6C17584E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCD91C24F64A55A28E4381A /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JustPlay/Config/JustPlay.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "JustPlay/Config/Generated-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.JustPlay;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16B5C7C95D2E4A6ECC0B49A2 /* Build configuration list for PBXNativeTarget "JustPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1813577225E8D0E8D842FD /* Debug */,
+				8A08B47302150B6C17584E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3E7FD6405A5B3D5E7581DF77 /* Build configuration list for PBXProject "JustPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEE87E1B7B4CE77E38382AA /* Debug */,
+				314CA65AC4E6B2F8F8132E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4FD6902749021DAD3D8C63DA /* Build configuration list for PBXNativeTarget "JustPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07055075A114812DA0936CE5 /* Debug */,
+				012161AEB35BAF495C0FA2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8630AB6D51F2BCE8D29C1BA3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDB0B3BAACE247D1FB39FD02 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8630AB6D51F2BCE8D29C1BA3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AE560CA80AF4AADC3589B866 /* Project object */;
+}

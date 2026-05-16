@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+
+# Signing (local only)
+JustPlay/Config/Signing.xcconfig
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved

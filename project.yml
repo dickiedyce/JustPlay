@@ -1,0 +1,89 @@
+name: JustPlay
+options:
+  minimumXcodeGenVersion: 2.38.0
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    MACOSX_DEPLOYMENT_TARGET: 13.0
+    MARKETING_VERSION: 1.0.3
+    CURRENT_PROJECT_VERSION: 4
+
+packages:
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: 2.3.0
+
+targets:
+  JustPlay:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: JustPlay/Sources
+      - path: JustPlay/Resources
+        buildPhase: resources
+    configFiles:
+      Debug: JustPlay/Config/Signing.xcconfig
+      Release: JustPlay/Config/Signing.xcconfig
+    info:
+      path: JustPlay/Config/Generated-Info.plist
+      properties:
+        CFBundleDisplayName: JustPlay
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSUIElement: true
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: WAV Audio
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.waveform-audio
+          - CFBundleTypeName: MP3 Audio
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.mp3
+          - CFBundleTypeName: M4A Audio
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.mpeg-4-audio
+          - CFBundleTypeName: AIFF Audio
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.aifc-audio
+              - public.aiff-audio
+          - CFBundleTypeName: CAF Audio
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - com.apple.coreaudio-format
+    entitlements:
+      path: JustPlay/Config/JustPlay.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-only: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dd.JustPlay
+        CODE_SIGN_ENTITLEMENTS: JustPlay/Config/JustPlay.entitlements
+        ENABLE_HARDENED_RUNTIME: YES
+    dependencies:
+      - package: KeyboardShortcuts
+
+  JustPlayTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: JustPlay/Tests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+    dependencies:
+      - target: JustPlay
