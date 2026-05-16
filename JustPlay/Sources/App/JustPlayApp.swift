@@ -9,9 +9,13 @@ struct JustPlayApp: App {
         MenuBarExtra("JustPlay", systemImage: "play.rectangle.on.rectangle") {
             MenuBarRootView(model: model)
         }
-
-        Settings {
-            EmptyView()
+        .commands {
+            CommandGroup(replacing: .appSettings) {
+                Button("Preferences...") {
+                    model.showPreferences()
+                }
+                .keyboardShortcut(",", modifiers: .command)
+            }
         }
     }
 }
