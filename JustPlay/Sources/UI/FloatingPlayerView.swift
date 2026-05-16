@@ -30,6 +30,7 @@ struct FloatingPlayerView: View {
                     Text("⏹︎")
                 }
                 .accessibilityLabel("Stop")
+                .disabled(!model.isPlaying)
 
                 Button {
                     model.replayLast()

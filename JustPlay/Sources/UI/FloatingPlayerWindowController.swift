@@ -5,6 +5,7 @@ final class FloatingPlayerWindowController: NSObject, NSWindowDelegate {
     static let shared = FloatingPlayerWindowController()
 
     private var windows: [NSWindow] = []
+    private weak var model: AppModel?
     private var currentOpacity: Double = 1.0
     private var isFloating = false
 
@@ -13,6 +14,7 @@ final class FloatingPlayerWindowController: NSObject, NSWindowDelegate {
     }
 
     func show(model: AppModel) {
+        self.model = model
         let contentView = NSHostingView(rootView: FloatingPlayerView(model: model))
         let window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 340, height: 140),
@@ -65,6 +67,13 @@ final class FloatingPlayerWindowController: NSObject, NSWindowDelegate {
 
     func windowWillClose(_ notification: Notification) {
         guard let closedWindow = notification.object as? NSWindow else { return }
-        windows.removeAll { $0 == closedWindow }
+        windows.removeAll { $0 === closedWindow }
+    }
+
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        model?.handleFloatingWindowClosed()
+        sender.orderOut(nil)
+        windows.removeAll { $0 === sender }
+        return false
     }
 }

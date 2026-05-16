@@ -16,6 +16,7 @@ struct MenuBarRootView: View {
         Button("Stop") {
             model.stop()
         }
+        .disabled(!model.isPlaying)
 
         Button("Replay Last") {
             model.replayLast()

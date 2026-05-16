@@ -2,6 +2,10 @@ import AppKit
 import Foundation
 
 final class OpenFileAppDelegate: NSObject, NSApplicationDelegate {
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        false
+    }
+
     func application(_ application: NSApplication, open urls: [URL]) {
         NotificationCenter.default.post(
             name: .justPlayOpenURLs,

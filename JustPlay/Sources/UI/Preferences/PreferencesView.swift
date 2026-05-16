@@ -137,6 +137,8 @@ struct PreferencesView: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
 
+            Toggle("Stop playback when closing a floating window", isOn: $model.stopPlaybackOnWindowClose)
+
             Toggle("Keep floating player above other windows", isOn: $model.keepFloatingWindowOnTop)
 
             HStack {

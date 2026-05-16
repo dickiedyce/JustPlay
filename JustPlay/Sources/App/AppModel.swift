@@ -38,6 +38,10 @@ final class AppModel: ObservableObject {
         }
     }
 
+    @Published var stopPlaybackOnWindowClose: Bool {
+        didSet { saveBool(stopPlaybackOnWindowClose, key: Keys.stopPlaybackOnWindowClose) }
+    }
+
     @Published var volume: Double {
         didSet {
             let clamped = max(0.0, min(1.0, volume))
@@ -119,6 +123,11 @@ final class AppModel: ObservableObject {
             self.openAtLogin = Self.currentOpenAtLoginState()
         } else {
             self.openAtLogin = defaults.bool(forKey: Keys.openAtLogin)
+        }
+        if defaults.object(forKey: Keys.stopPlaybackOnWindowClose) == nil {
+            self.stopPlaybackOnWindowClose = true
+        } else {
+            self.stopPlaybackOnWindowClose = defaults.bool(forKey: Keys.stopPlaybackOnWindowClose)
         }
 
         let storedVolume = defaults.object(forKey: Keys.volume) as? Double ?? 0.8
@@ -319,6 +328,11 @@ final class AppModel: ObservableObject {
         FloatingPlayerWindowController.shared.hide()
     }
 
+    func handleFloatingWindowClosed() {
+        guard stopPlaybackOnWindowClose, isPlaying else { return }
+        stop()
+    }
+
     private func persistRecentFiles() {
         let paths = recentFiles.map(\.path)
         defaults.set(paths, forKey: Keys.recentFiles)
@@ -414,6 +428,7 @@ final class AppModel: ObservableObject {
         static let autoPlayOnLaunch = "autoPlayOnLaunch"
         static let autoPlayOnFileOpen = "autoPlayOnFileOpen"
         static let openAtLogin = "openAtLogin"
+        static let stopPlaybackOnWindowClose = "stopPlaybackOnWindowClose"
         static let volume = "volume"
         static let fadeInDuration = "fadeInDuration"
         static let fadeOutDuration = "fadeOutDuration"
